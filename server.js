@@ -59,7 +59,6 @@ apiRoutes.post('/authenticate', function (req, res) {
     if (err) {
       throw err;
     }
-    console.log(user)
 
     if (!user || user.password !== req.body.password) {
       res.json({ success: false, message: 'Authentication failed.'});
