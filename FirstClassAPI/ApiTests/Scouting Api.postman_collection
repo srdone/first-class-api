@@ -1,0 +1,88 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Scouting Api",
+		"_postman_id": "e144a64a-c237-f81e-8f7b-8fa795daf0bd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "scouts",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Scouts",
+					"request": {
+						"url": "localhost:5000/api/scouts",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Stephen\",\n\t\"lastName\": \"Done\",\n\t\"rank\": \"Eagle\"\n}"
+						},
+						"description": "Get scouts"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Scout",
+					"request": {
+						"url": "localhost:5000/api/scouts",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Stephen\",\n\t\"lastName\": \"Done\",\n\t\"rank\": \"Eagle\"\n}"
+						},
+						"description": "Get scouts"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Scout",
+					"request": {
+						"url": "localhost:5000/api/scouts/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"key\": 1,\n\t\"firstName\": \"Stephen\",\n\t\"lastName\": \"Done\",\n\t\"rank\": \"First Class\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Scout",
+					"request": {
+						"url": "localhost:5000/api/scouts/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
